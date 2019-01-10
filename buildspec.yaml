@@ -3,5 +3,5 @@ version: 0.2
 phases:
     build:
       commands:
-        - sh build.sh --target=Package
+        - build.sh --target=Package
 
