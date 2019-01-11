@@ -6,7 +6,6 @@ phases:
         - chmod +x build.sh
     build:
       commands:
-        - mono
         - dotnet --list-sdks
         - dotnet --version
         - ls
