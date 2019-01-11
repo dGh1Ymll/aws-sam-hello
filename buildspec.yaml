@@ -4,6 +4,8 @@ phases:
     install:
       commands:
         - echo Entered the install phase...
+        - add-apt-repository universe -y
+        - apt-get install apt-transport-https -y
         - apt-get update -y
         - apt-get install dotnet-sdk-2.1.5
     build:
