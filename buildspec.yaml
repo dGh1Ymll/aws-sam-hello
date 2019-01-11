@@ -5,4 +5,5 @@ phases:
       commands:
         - chmod 700 ./build.sh
         - ./build.sh --target=Package
+        - cake
 
