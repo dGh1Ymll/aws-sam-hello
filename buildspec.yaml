@@ -1,14 +1,14 @@
 version: 0.2
 
 phases:
+    install: 
+      commands:
+        - chmod +x build.sh
     build:
       commands:
-        - mono
         - dotnet --list-sdks
         - dotnet --version
-        - cd $CODEBUILD_SRC_DIR
         - ls
-        - chmod +x build.sh
         - ./build.sh
 
 
