@@ -8,7 +8,7 @@ phases:
         - apt-get update -y
         - apt-get install apt-transport-https -y
         - apt-get update -y
-        - apt-get install dotnet-sdk-2.1.5
+        - apt-get install dotnet-sdk-2.1
     build:
       commands:
         - dotnet --list-sdks
