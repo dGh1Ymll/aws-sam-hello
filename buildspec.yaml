@@ -11,5 +11,6 @@ phases:
         - dotnet --version
         - ls
         - dotnet-cake
+        - ls ./artifacts
 
 
