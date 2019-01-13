@@ -3,12 +3,12 @@ version: 0.2
 phases:
     install: 
       commands:
-        - chmod +x build.sh
+        - dotnet tool install --framework netcoreapp2.1  --global Cake.Tool --version 0.32.0
     build:
       commands:
         - dotnet --list-sdks
         - dotnet --version
         - ls
-        - ./build.sh
+        - dotnet-cake
 
 
