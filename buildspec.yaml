@@ -7,10 +7,13 @@ phases:
         - export PATH="$PATH:/root/.dotnet/tools"
     build:
       commands:
-        - dotnet --list-sdks
-        - dotnet --version
-        - ls
         - dotnet-cake
-        - ls ./artifacts
+        - aws cloudformation package --template-file template.yaml --s3-bucket test --output template-file outputTemplate.yaml
+
+artifacts:
+    type: zip
+    files:
+      - template.yaml
+      - outputTemplate.yaml
 
 
