@@ -12,7 +12,7 @@ phases:
       commands:
         #- dotnet cake 
         - dotnet lambda package -o ../../artifacts/HelloWorld.zip
-        - aws cloudformation help
+        - cd ../../
         - aws cloudformation package --template-file template.yaml 
                                         --s3-bucket hello.sam.bucket.test 
                                         --output-template-file outputTemplate.yaml
