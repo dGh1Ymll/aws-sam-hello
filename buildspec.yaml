@@ -9,7 +9,7 @@ phases:
       commands:
         - dotnet-cake
         - aws cloudformation help
-        - aws cloudformation package --template-file template.yaml --s3-bucket hellosam --output-template-file outputTemplate.yaml
+        - aws cloudformation package --template-file template.yaml --s3-bucket hello.sam.bucket.test --output-template-file outputTemplate.yaml
 
 artifacts:
     type: zip
