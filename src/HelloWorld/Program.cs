@@ -37,7 +37,7 @@ namespace HelloWorld
             string location = GetCallingIP().Result;
             Dictionary<string, string> body = new Dictionary<string, string>
             {
-                { "message", "hello world, bois" }, 
+                { "message", "hello world, wat is deze!!! Groeten uit leeuwarden" }, 
                 { "location", location },
             };
 
