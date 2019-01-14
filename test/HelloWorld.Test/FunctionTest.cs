@@ -40,7 +40,7 @@ namespace HelloWorld.Tests
             string location = GetCallingIP().Result;
             Dictionary<string, string> body = new Dictionary<string, string>
             {
-                { "message", "hello world" },
+                { "message", "hello world, bois" },
                 { "location", location },
             };
 

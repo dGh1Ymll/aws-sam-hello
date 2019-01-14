@@ -5,9 +5,13 @@ phases:
       commands:
         - dotnet tool install --framework netcoreapp2.1  --global Cake.Tool --version 0.32.0
         - export PATH="$PATH:/root/.dotnet/tools"
+        - dotnet tool install -g Amazon.Lambda.Tools
+        - cd src
+        - cd HelloWorld
     build:
       commands:
-        - dotnet-cake
+        #- dotnet cake 
+        - dotnet lambda package -o ../../artifacts/HelloWorld.zip
         - aws cloudformation help
         - aws cloudformation package --template-file template.yaml 
                                         --s3-bucket hello.sam.bucket.test 
